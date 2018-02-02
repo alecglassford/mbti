@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+div {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 90%;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  animation: 2s ease-out fadein;
+}
+
+.fadeout {
+  animation: 1s ease-in forwards fadeout;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  border-width: 0;
+  border-radius: 5px;
+  padding: 0 0.25em 0.25em 0.25em;
+  background-color: #beaed4cc;
+  color: white;
+  font-size: 1.5em;
+  font-family: "Georgia", serif;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+}
+
+button:hover {
+  background-color: #beaed4;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+p {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@keyframes fadein {
+  0% { margin-top: 50vh; opacity: 0; }
+  100% { margin-top: 0; opacity: 1; }
+}
+
+@keyframes fadeout {
+  0% { margin-bottom: 0; opacity: 1; }
+  100% { margin-bottom: 50vh; opacity: 0; }
+}
