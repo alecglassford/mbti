@@ -2,7 +2,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0;
   height: 100vh;
+}
+
+a {
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 1em;
+  text-decoration: none;
+  opacity: 0.25;
+  transition: opacity 1s ease;
+}
+
+a:hover {
+  opacity: 1;
 }
 
 div {
